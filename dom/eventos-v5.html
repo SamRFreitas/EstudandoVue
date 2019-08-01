@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <h1 v-on:mousemove="atualizarXY">
+        Mouse: {{x}} e {{y}}
+        <span v-on:mousemove.stop="">PARAR EVENTO AQUI!</span>
+    </h1>
+    <a v-on:click.prevent="" href="http://google.com">Google</a>
+    <hr>
+    <input type="text" v-on:keyup.enter.alt="alerta">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            x: 0,
+            y: 0,
+            msgAlert: ''
+        },
+        methods:{
+            atualizarXY(e){
+                this.x = e.clientX
+                this.y = e.clientY
+            },
+            alerta(){
+                alert("Show")
+            }
+        }
+    })
+</script>
