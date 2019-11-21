@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <!-- Vai gerar um erro pois [novaInfo] não está configurada na instancia Vue, 
+         portanto não é uma propriedade reativa-->
+    {{ titulo }} {{ novaInfo }}
+    <button @click="alterar">Alterar</button>
+</div>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Teste'
+        },
+        methods:{
+            alterar() { 
+                this.titulo += '!'
+            }
+        }
+    })
+
+    vm.novaInfo = 'Teste'
+    console.log(vm.novaInfo);
+    
+
+</script>
