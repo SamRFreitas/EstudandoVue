@@ -16,10 +16,10 @@
 
 <script>
 
-import Navigation from './Navigation.vue'
-import Footer from './Footer.vue'
-import Carousel from './Carousel.vue'
-import Toolbar from './Toolbar'
+import Navigation from '@/components/template/Navigation.vue'
+import Footer from '@/components/template/Footer.vue'
+import Carousel from '@/components/widgets/Carousel.vue'
+import Toolbar from '@/components/template/Toolbar.vue'
 
 export default {
 	components:{
