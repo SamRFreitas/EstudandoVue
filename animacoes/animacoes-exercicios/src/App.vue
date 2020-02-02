@@ -2,15 +2,15 @@
 	<div id="app" class="container-fluid">
 		<h1>Animações</h1>
 
-		<!-- <hr> -->
+		<hr> 
 
-		<!-- <b-button variant="primary" class="mb-4" @click="exibir = !exibir">Mostrar Mensagem</b-button> -->
+		<b-button variant="primary" class="mb-4" @click="exibir = !exibir">Mostrar Mensagem</b-button>
 
-		<!-- <transition name="fade" appear>
+		<transition name="fade" appear>
 			<b-alert variant="info" show v-if="exibir">{{ msgInfo }}</b-alert>
 		</transition>
 
-		<transition name="slide" type="animation" appear>
+		<!-- <transition name="slide" type="animation" appear>
 			<b-alert variant="warning" show v-if="exibir">{{ msgWarning }}</b-alert>
 		</transition>
 
@@ -19,10 +19,10 @@
 			leave-active-class="animated shake"
 		>
 			<b-alert variant="danger" show v-if="exibir">{{ msgWarning }}</b-alert>
-		</transition> -->
+		</transition>
 
 
-		<!-- <hr>
+		 <hr> 
 
 		<b-select v-model="tipoAnimação" class="mb-4">
 			<option value="fade">Fade</option>
@@ -54,17 +54,17 @@
 			<div class="caixa" v-if="exibir2">
 
 			</div>
-		</transition> -->
+		</transition> 
 
-		<!-- <hr>
-		<div class="mb-4">
+		 <hr> 
+		<!-- <div class="mb-4">
 			<b-button variant="primary" @click="componenteSelecionado = 'AlertaInfo'" class="mr-2">Info</b-button>
 			<b-button variant="secondary" @click="componenteSelecionado = 'AlertaAdvertencia'">Adventência</b-button>
 		</div>
 
 		<transition name="fade" mode="out-in">
 			<component :is="componenteSelecionado"></component>
-		</transition> -->
+		</transition>
 
 		<hr>
 		<b-button @click="adicionarAluno" class="mb2">Adicionar Aluno</b-button>
@@ -72,7 +72,7 @@
 			<b-list-group v-for="(aluno, i) in alunos" :key="aluno">
 				<b-list-group-item @click="removerAluno(i)">{{ aluno }}</b-list-group-item>
 			</b-list-group>
-		</transition-group>
+		</transition-group> --> 
 	</div>
 </template>
 

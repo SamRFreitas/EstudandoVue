@@ -5,7 +5,7 @@ export default [
             { text: 'MATILHA', correct: true },
             { text: 'REBANHO', correct: false },
             { text: 'CARDUME', correct: false },
-            { text: 'MANADA', correct: false }
+            { text: 'MANADA', correct: false },
         ]
     },
     {
